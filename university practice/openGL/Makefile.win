@@ -1,0 +1,73 @@
+# Project: openGL_lab1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = test1.o OpenglDemo.o OpenglDemo3d.o lab2.o lab3_DDA.o lab3_zhongdianhuaxian.o lab5_bianjiebiaozhi.o lab4.o lab5_saomiaoxian.o lab6_C-S.o lab7.o lab8.o lab9.o lab10.o lab11.o lab12.o
+LINKOBJ  = test1.o OpenglDemo.o OpenglDemo3d.o lab2.o lab3_DDA.o lab3_zhongdianhuaxian.o lab5_bianjiebiaozhi.o lab4.o lab5_saomiaoxian.o lab6_C-S.o lab7.o lab8.o lab9.o lab10.o lab11.o lab12.o
+LIBS     = -L"F:/dev-cpp/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc ../../../Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libglu32.a ../../../Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libglut32.a ../../../Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libopengl32.a -m32
+INCS     = -I"F:/dev-cpp/Dev-Cpp/MinGW64/include" -I"F:/dev-cpp/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/dev-cpp/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"F:/dev-cpp/Dev-Cpp/MinGW64/include" -I"F:/dev-cpp/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/dev-cpp/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"F:/dev-cpp/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = openGL_lab1.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+test1.o: test1.cpp
+	$(CPP) -c test1.cpp -o test1.o $(CXXFLAGS)
+
+OpenglDemo.o: OpenglDemo.cpp
+	$(CPP) -c OpenglDemo.cpp -o OpenglDemo.o $(CXXFLAGS)
+
+OpenglDemo3d.o: OpenglDemo3d.cpp
+	$(CPP) -c OpenglDemo3d.cpp -o OpenglDemo3d.o $(CXXFLAGS)
+
+lab2.o: lab2.cpp
+	$(CPP) -c lab2.cpp -o lab2.o $(CXXFLAGS)
+
+lab3_DDA.o: lab3_DDA.cpp
+	$(CPP) -c lab3_DDA.cpp -o lab3_DDA.o $(CXXFLAGS)
+
+lab3_zhongdianhuaxian.o: lab3_zhongdianhuaxian.cpp
+	$(CPP) -c lab3_zhongdianhuaxian.cpp -o lab3_zhongdianhuaxian.o $(CXXFLAGS)
+
+lab5_bianjiebiaozhi.o: lab5_bianjiebiaozhi.cpp
+	$(CPP) -c lab5_bianjiebiaozhi.cpp -o lab5_bianjiebiaozhi.o $(CXXFLAGS)
+
+lab4.o: lab4.cpp
+	$(CPP) -c lab4.cpp -o lab4.o $(CXXFLAGS)
+
+lab5_saomiaoxian.o: lab5_saomiaoxian.cpp
+	$(CPP) -c lab5_saomiaoxian.cpp -o lab5_saomiaoxian.o $(CXXFLAGS)
+
+lab6_C-S.o: lab6_C-S.cpp
+	$(CPP) -c lab6_C-S.cpp -o lab6_C-S.o $(CXXFLAGS)
+
+lab7.o: lab7.cpp
+	$(CPP) -c lab7.cpp -o lab7.o $(CXXFLAGS)
+
+lab8.o: lab8.cpp
+	$(CPP) -c lab8.cpp -o lab8.o $(CXXFLAGS)
+
+lab9.o: lab9.cpp
+	$(CPP) -c lab9.cpp -o lab9.o $(CXXFLAGS)
+
+lab10.o: lab10.cpp
+	$(CPP) -c lab10.cpp -o lab10.o $(CXXFLAGS)
+
+lab11.o: lab11.cpp
+	$(CPP) -c lab11.cpp -o lab11.o $(CXXFLAGS)
+
+lab12.o: lab12.cpp
+	$(CPP) -c lab12.cpp -o lab12.o $(CXXFLAGS)

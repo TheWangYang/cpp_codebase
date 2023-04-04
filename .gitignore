@@ -1,0 +1,5 @@
+# 忽略.exe文件
+*.exe
+cpp_study_notes_codebase/build/
+
+

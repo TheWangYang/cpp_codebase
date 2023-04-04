@@ -1,0 +1,13 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+
+//É¾³ýÁ´±íµÄ 
+int main(){
+	
+	return 0;
+} 
+
+
