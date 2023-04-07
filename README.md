@@ -1,2 +1,2 @@
 # cpp_codebase
-This codabase is for another codebase named "cpp_study_notes".
+This codabase records the process of learning C++ in my undergraduate.
